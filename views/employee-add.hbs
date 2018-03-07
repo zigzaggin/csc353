@@ -1,0 +1,24 @@
+<form method="post" id="employee-add-form">
+    <div class="control">
+        <label>First Name</label>
+        <input type="text" name="firstName" placeholder="First Name" data-required="First Name is required."/>
+    </div>
+    <div class="control">
+        <label>Last Name</label>
+        <input type="text" name="lastName" placeholder="Last Name" data-required="Last Name is required."/>
+    </div>
+    <div class="control">
+        <label>Pay Rate</label>
+        <input type="text" name="payRate" placeholder="$/hour OR Annual Salary" data-required="Pay Rate is required"/>
+    </div>
+    <div class="control">
+        <label>Employee Type</label>
+        <select name="payType">
+            <option value="hourly">Hourly</option>
+            <option value="salary">Salary</option>
+        </select>
+    </div>
+    <div class="control">
+        <input type="submit" value="Submit">
+    </div>
+</form>

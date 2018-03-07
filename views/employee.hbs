@@ -1,0 +1,9 @@
+<script src="/js/employee.js" type="text/javascript"></script>
+<input type="hidden" name="EmployeeID" data-employee-id value="{{employee.id}}"/>
+<h2>Hours</h2>
+{{#each days}}
+    <div class="control">
+        <label>{{label}}</label>
+        <input type="text" name="{{label}}" value="{{hours}}" data-hours/>
+    </div>
+{{/each}}

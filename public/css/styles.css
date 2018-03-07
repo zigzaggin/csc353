@@ -1,0 +1,39 @@
+body {
+    background: #efefef;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.error {
+    border-color: red;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.page-title {
+    font-size: 18px;
+    border-bottom: solid 1px #dfdfdf
+}
+
+form {
+    width: 300px;
+}
+
+.control {
+    display: block;
+}
+
+.control label {
+    display: block;
+}
+
+.control input, .control select {
+    width: 100%;
+}
+
+.control + .control {
+    margin-top: 10px;
+}

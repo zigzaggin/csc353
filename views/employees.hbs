@@ -1,0 +1,19 @@
+{{#if employees}}
+    <ul>
+        {{#each employees}}
+            <li data-employee-id="{{id}}">
+                <a href="#" data-add-hours>
+                    {{name.first}} {{name.last}}
+                </a> -
+                {{#if pay.isHourly}}
+                    ${{pay.rate}}/Hour
+                {{else}}
+                    ${{pay.rate}}/Year
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+{{else}}
+    There are currently no employees.
+{{/if}}
+<a href="/employees/new"> Add Employee</a>
